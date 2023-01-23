@@ -12,3 +12,7 @@ test("analyze", () => {
 test("is array", () => {
     expect(() => { analyzeArray(1,2,3,4,5) }).toThrow();
 });
+
+test("does contain only number", () => {
+    expect(() => { analyzeArray([1, 2, '3', 4, 5]) }).toThrow();
+})
